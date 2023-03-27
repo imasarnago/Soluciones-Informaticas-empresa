@@ -128,7 +128,10 @@ h1{
   background-color: aqua;
   color: black;
 }
-
+.boton-enviar1:active {
+  color: rgb(139, 225, 227);
+  background-color: black;
+}
 
 
 /* Aquí empiezan los estilos del formulario del proceso */
