@@ -1,4 +1,6 @@
 body {
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Share Tech', sans-serif;
     width: 100%;
     background-image: url(images/ciudad.jpg);
     background-repeat: no-repeat;
@@ -8,6 +10,14 @@ body {
 
 /* Aqui empiezan los estilos para la primera sección de la página, que es la que describe al personal y a la empresa */
 
+h1{
+  font-weight: 900;
+  margin-top: 30px;
+}
+
+.organizacion p {
+  font-weight: 600;
+}
 
 .organizacion {
   display: flex;
@@ -107,7 +117,17 @@ body {
   color: black;
 }
 
+.boton-enviar1 {
+  border-radius: 6px;
+  background-color: white;
+  color: black;
+}
 
+.boton-enviar1:hover {
+  width: 85px;
+  background-color: aqua;
+  color: black;
+}
 
 
 
