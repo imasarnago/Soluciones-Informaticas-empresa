@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;900&family=Share+Tech&display=swap" rel="stylesheet">
+    <script src="index.js" defer></script>
 </head>
 <body>
   <!-- Aquí empieza la descripción de la empresa y sus miembros -->
@@ -69,18 +70,22 @@
     <!-- Aqui empieza el formulario de contacto, con un input para escribir un comentario y otro donde se debe ingresar el mail -->
     <div class="formulario-contacto">
         <h3 id="titulo-reclamo">¡Contactate con nosotros y nos comunicaremos a la brevedad!</h3>
-        <form>
+        <form id="form1">
             <div class="form-group">
               <label for="exampleFormControlInput1" class="label-text mt-4">Ingrese su email</label>
-              <input type="email" class="form-control email-input" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+              <input type="email" class="form-control email-input" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com" required>
             </div>
             <div class="form-group">
               <label for="exampleFormControlTextarea1" class="label-text">Agregue un comentario</label>
               <textarea class="form-control texto-input" id="exampleFormControlTextarea1"  rows="3" cols="50" placeholder="¿Qué quieres contarnos?"></textarea>
             </div>
             <div class="form-group">
-              <button type="submit" class="boton-enviar1">¡Enviar!</button>
+              <button type="button" class="boton-enviar1" id="enviar-btn">¡Enviar!</button>
             </div>
+        </form>
+        <form id="form2">
+          <p> <span id="cambiaColor">Su información ha sido recibida correctamente </span>. Aquí un pequeño resúmen de los datos ingresados:</p>
+          <div id="summary"></div>
         </form>
     </div>
     <!-- Aquí empiezo el formulario de proceso. Puede llegar a ser un formulario de reclamo también -->
