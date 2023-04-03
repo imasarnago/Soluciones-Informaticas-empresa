@@ -6,6 +6,7 @@ const tituloReclamo = document.getElementById("titulo-reclamo")
 const cambiaColor = document.getElementById("cambiaColor")
 
 
+// El codigo a continuación lo que hace es hacer un formulario paso a paso. Sus valores se pueden modificar siguiendo la misma lógica con otros campos input
 
 enviarBtn.addEventListener("click", function() {
     let email = document.querySelector("#exampleFormControlInput1").value;
@@ -19,3 +20,9 @@ enviarBtn.addEventListener("click", function() {
     tituloReclamo.style.display = "none"
     cambiaColor.style.color = "#ffc300"
   });
+
+
+
+$(document).ready(function () {
+  // Esto se ejecuta luego de cargar el documento. Es como un defer
+})

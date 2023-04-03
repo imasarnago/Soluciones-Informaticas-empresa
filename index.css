@@ -20,16 +20,15 @@ h1{
 }
 
 .organizacion {
+  /*background-color: black;*/
   display: flex;
   flex-direction: column;
-  /*background-image: url("images/ciudad.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;*/
   text-align: center;
   margin: 0%;
   padding: 50px; 
-  color: rgb(0, 0, 0);
+  color: black;
+  /*color: white;*/
+  /*text-shadow: grey 1px 0 10px;*/
 }
 
 /*.organizacion {
