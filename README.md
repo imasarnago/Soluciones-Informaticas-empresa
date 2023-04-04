@@ -3,4 +3,4 @@ This will be a landing page made for a web development course. The technologies 
 
 It´s a web that describes a company offering tech related solutions and information about its staff members (in this case, they are programmers).
 
-https://github.com/imasarnago/UTN-Landing-Page
+https://soluciones-informaticas-utn.netlify.app/
