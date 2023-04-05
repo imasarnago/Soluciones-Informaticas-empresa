@@ -81,7 +81,7 @@ h1{
   margin: 30px 10px;
 }
 
-#titulo-reclamo {
+.titulo-formulario {
   margin-top: 70px;
   color: black;
   background-color: rgb(139, 225, 227);     /*background-color: #C0C0C0;*/
@@ -159,25 +159,10 @@ display: flex;
 margin: 80px 0;
 justify-content: center;
 align-items: center;
-flex-flow: column;
+flex-direction: column;
 margin: 30px 10px;
 }
 
-#titulo-cliente {
-margin-top: 70px;
-color: black;
-background-color: rgb(139, 225, 227);     /*background-color: #C0C0C0;*/
-border-radius: 6px;
-padding: 8px;  
-}
-
-
-.label-text {
-background-color: rgb(184, 225, 240);
-padding: 3px 4px;
-border-radius: 3px;
-color: black;
-}
 
 #input-proceso {
 margin: 15px;
@@ -194,17 +179,24 @@ background-color: black;
 }
 
 .boton-enviar2 {
-border-radius: 6px;
-background-color: white;
-color: black;
+  border-radius: 6px;
+  background-color: white;
+  color: black;
 }
+
 .boton-enviar2:hover {
-width: 85px;
-background-color: aqua;
-color: black;
+  width: 85px;
+  background-color: aqua;
+  color: black;
 }
-    
-.boton-enviar:active {
-color: rgb(139, 225, 227);
-background-color: black;
+.boton-enviar2:active {
+  color: rgb(139, 225, 227);
+  background-color: black;
+}
+
+
+.seleccionar {
+  width: 420px;
+  height: 40px;
+  padding-left: 2%;
 }
