@@ -2,6 +2,7 @@ const enviarBtn = document.getElementById("enviar-btn")
 const summary = document.querySelector("#summary");
 const form1 = document.querySelector("#form1");
 const form2 = document.querySelector("#form2");
+const emailInput = document.querySelector(".email-input");
 const tituloReclamo = document.getElementById("titulo-reclamo")
 const cambiaColor = document.getElementById("cambiaColor")
 
@@ -26,3 +27,11 @@ enviarBtn.addEventListener("click", function() {
 $(document).ready(function () {
   // Esto se ejecuta luego de cargar el documento. Es como un defer
 })
+
+
+function enviarForm2(event) {
+  event.preventDefault()
+  $("select").each(function(){
+    console.log($(this).val())
+  })
+}

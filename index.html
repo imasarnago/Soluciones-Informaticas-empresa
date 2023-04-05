@@ -70,7 +70,7 @@
 
     <!-- Aqui empieza el formulario de contacto, con un input para escribir un comentario y otro donde se debe ingresar el mail -->
     <div class="formulario-contacto">
-        <h3 class="titulo-formulario">¡Contactate con nosotros y nos comunicaremos a la brevedad!</h3>
+        <h3 class="titulo-formulario" id="titulo-reclamo">¡Contactate con nosotros y nos comunicaremos a la brevedad!</h3>
         <form id="form1">
             <div class="form-group">
               <label for="exampleFormControlInput1" class="label-text mt-4">Ingrese su email</label>
@@ -78,12 +78,12 @@
             </div>
             <div class="form-group">
               <label for="exampleFormControlTextarea1" class="label-text">Agregue un comentario</label>
-              <textarea class="form-control texto-input" id="exampleFormControlTextarea1"  rows="3" cols="50" placeholder="¿Qué quieres contarnos?"></textarea>
+              <textarea class="form-control texto-input" id="exampleFormControlTextarea1"  rows="3" cols="50" placeholder="¿Qué quieres contarnos?" required></textarea>
+            </div>
+            <div class="form-group">
+              <button type="button" class="boton-enviar" id="enviar-btn">¡Enviar!</button>
             </div>
         </form>
-        <div class="form-group">
-          <button type="button" class="boton-enviar">¡Enviar!</button>
-        </div>
         <form id="form2">
           <p> <span id="cambiaColor">Su información ha sido recibida correctamente </span>. Aquí un pequeño resúmen de los datos ingresados:</p>
           <div id="summary"></div>
@@ -96,7 +96,7 @@
             <div class="form-group">
               <label class="label-text mt-4">Servicios/Productos</label>
             </div>
-            <select class="form-select seleccionar form-select-lg mb-3" aria-label=".form-select-lg">
+            <select class="form-select seleccionar form-select-lg mb-3" aria-label=".form-select-lg"required>
               <option>Seleccionar</option>
               <option value="1">Pagina Web</option>
               <option value="2">Instalación de programas</option>
@@ -105,22 +105,22 @@
               <option value="5">Gestion de sistemas</option>
             </select>
           </form>
-          <form id="form4">
+          <form id="form4" onsubmit="enviarForm2(event)">
             <div class="form-group">
                 <label class="label-text mt-4">Metodo de pago</label>
             </div>
-            <select class="form-select seleccionar form-select-lg mb-3" aria-label=".form-select-lg">
+            <select class="form-select seleccionar form-select-lg mb-3" aria-label=".form-select-lg" required>
               <option selected>Seleccionar</option>
               <option value="1">Tarjeta de debito</option>
               <option value="2">Tarjeta de credito</option>
               <option value="3">Transferencia bancaria</option>
               <option value="4">PayPal</option>
             </select>
+            <div class="form-group">
+              <button type="submit" class="boton-enviar">¡Enviar!</button>
+          </div>
           </form>
 
-            <div class="form-group">
-                <button type="button" class="boton-enviar">¡Enviar!</button>
-            </div>
         </div>
 
 
