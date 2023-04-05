@@ -120,18 +120,18 @@ h1{
   color: black;
 }
 
-.boton-enviar1 {
+.boton-enviar {
   border-radius: 6px;
   background-color: white;
   color: black;
 }
 
-.boton-enviar1:hover {
+.boton-enviar:hover {
   width: 85px;
   background-color: aqua;
   color: black;
 }
-.boton-enviar1:active {
+.boton-enviar:active {
   color: rgb(139, 225, 227);
   background-color: black;
 }
@@ -178,18 +178,18 @@ color: black;
 background-color: black;
 }
 
-.boton-enviar2 {
+.boton-enviar {
   border-radius: 6px;
   background-color: white;
   color: black;
 }
 
-.boton-enviar2:hover {
+.boton-enviar:hover {
   width: 85px;
   background-color: aqua;
   color: black;
 }
-.boton-enviar2:active {
+.boton-enviar:active {
   color: rgb(139, 225, 227);
   background-color: black;
 }
