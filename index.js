@@ -32,7 +32,24 @@ $(document).ready(function () {
 
 function enviarForm2(event) {
   event.preventDefault()
-  $("select").each(function(){
-    console.log($(this).val())
-  })
-}
+  const errores = []
+  $("#enviar-2").click(function(){
+    if($(".seleccionar1").val() === "Seleccionar") {
+      //console.log("Hola")
+      errores.push("Hay un error. Complete los campos si quiere enviar el formulario")
+    }
+    if (errores.length > 0) {
+     alert("Hay errores")
+     $("p").css("padding","10px")
+     $("p").css("background-color","black")
+     $("p").css("color","red")
+     errores.forEach(function (elemento){
+      $("#errores").append(elemento )
+      
+     }) 
+    }
+    else {
+      alert ("Se envió el formulario")
+    }
+  }
+)} 

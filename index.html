@@ -96,20 +96,20 @@
             <div class="form-group">
               <label class="label-text mt-4">Servicios/Productos</label>
             </div>
-            <select class="form-select seleccionar form-select-lg mb-3" aria-label=".form-select-lg"required>
+            <select class="form-select seleccionar seleccionar1 form-select-lg mb-3" aria-label=".form-select-lg"required>
               <option>Seleccionar</option>
-              <option value="1">Pagina Web</option>
-              <option value="2">Instalación de programas</option>
-              <option value="3">Limpieza de memoria</option>
-              <option value="4">Desarrollo de software (web,escritorio,etc.)</option>
-              <option value="5">Gestion de sistemas</option>
+              <option value="Pagina Web">Pagina Web</option>
+              <option value="Instalación de programas">Instalación de programas</option>
+              <option value="Limpieza de memoria">Limpieza de memoria</option>
+              <option value="Desarrollo de software (web,escritorio,etc.)">Desarrollo de software (web,escritorio,etc.)</option>
+              <option value="Gestion de sistemas">Gestion de sistemas</option>
             </select>
           </form>
           <form id="form4" onsubmit="enviarForm2(event)">
             <div class="form-group">
                 <label class="label-text mt-4">Metodo de pago</label>
             </div>
-            <select class="form-select seleccionar form-select-lg mb-3" aria-label=".form-select-lg" required>
+            <select class="form-select seleccionar seleccionar2 form-select-lg mb-3" aria-label=".form-select-lg" required>
               <option selected>Seleccionar</option>
               <option value="1">Tarjeta de debito</option>
               <option value="2">Tarjeta de credito</option>
@@ -117,9 +117,10 @@
               <option value="4">PayPal</option>
             </select>
             <div class="form-group">
-              <button type="submit" class="boton-enviar">¡Enviar!</button>
+              <button type="submit" class="boton-enviar" id="enviar-2">¡Enviar!</button>
           </div>
           </form>
+          <p id="errores"></p>
 
         </div>
 
