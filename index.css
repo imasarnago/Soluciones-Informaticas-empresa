@@ -150,22 +150,61 @@ h1{
 
 
 /* Aquí empiezan los estilos del formulario del proceso */
-
-.formulario-proceso {
-  margin: 50px 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+#form5 {
+display: none;
 }
 
-.formulario-proceso h3 {
-  color: black;
-  background-color: rgb(139, 225, 227);
-  border-radius: 5px;
-  padding: 8px;
+.formulario-proceso {
+display: flex;
+margin: 80px 0;
+justify-content: center;
+align-items: center;
+flex-flow: column;
+margin: 30px 10px;
+}
+
+#titulo-cliente {
+margin-top: 70px;
+color: black;
+background-color: rgb(139, 225, 227);     /*background-color: #C0C0C0;*/
+border-radius: 6px;
+padding: 8px;  
+}
+
+
+.label-text {
+background-color: rgb(184, 225, 240);
+padding: 3px 4px;
+border-radius: 3px;
+color: black;
 }
 
 #input-proceso {
-  margin: 15px;
+margin: 15px;
+}
+
+.form-select {
+border-radius: 6px;
+background-color: white;
+color: black;
+}
+
+.btn-primary {
+background-color: black;
+}
+
+.boton-enviar2 {
+border-radius: 6px;
+background-color: white;
+color: black;
+}
+.boton-enviar2:hover {
+width: 85px;
+background-color: aqua;
+color: black;
+}
+    
+.boton-enviar:active {
+color: rgb(139, 225, 227);
+background-color: black;
 }
