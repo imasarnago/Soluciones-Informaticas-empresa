@@ -40,9 +40,9 @@ function enviarForm2(event) {
     }
     if (errores.length > 0) {
      alert("Hay errores")
-     $("p").css("padding","10px")
-     $("p").css("background-color","black")
-     $("p").css("color","red")
+     $("errores").css("padding","10px")
+     $("#errores").css("background-color","black")
+     $("#errores").css("color","red")
      errores.forEach(function (elemento){
       $("#errores").append(elemento )
       
