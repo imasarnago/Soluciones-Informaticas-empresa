@@ -90,9 +90,11 @@
         </form>
     </div>
     <!-- Aquí empiezo el formulario de proceso. Puede llegar a ser un formulario de reclamo también -->
-        <div class="formulario-proceso">
-        <h3 class="titulo-formulario">Explora nuestros servicios</h3>
-          <form id="form3">
+        
+        
+          <form id="form4" onsubmit="enviarForm2(event)">
+            <div class="formulario-contacto">
+            <h3 class="titulo-formulario">Explora nuestros servicios</h3>
             <div class="form-group">
               <label class="label-text mt-4">Servicios/Productos</label>
             </div>
@@ -104,8 +106,6 @@
               <option value="Desarrollo de software (web,escritorio,etc.)">Desarrollo de software (web,escritorio,etc.)</option>
               <option value="Gestion de sistemas">Gestion de sistemas</option>
             </select>
-          </form>
-          <form id="form4" onsubmit="enviarForm2(event)">
             <div class="form-group">
                 <label class="label-text mt-4">Metodo de pago</label>
             </div>

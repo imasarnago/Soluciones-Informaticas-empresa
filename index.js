@@ -39,6 +39,7 @@ function enviarForm2(event) {
   event.preventDefault()
   alert ("Se registraron los datos correctamente")
   $("#errores").empty()
+  $("#errores").remove()
 } 
 
 
