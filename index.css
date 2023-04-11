@@ -64,6 +64,7 @@ h1{
   background-color: white;
   color: black;
   margin-top: 10px;
+  background-color: lavender;
   }
 
 
@@ -117,7 +118,7 @@ h1{
 
 .label-text {
   background-color: rgb(184, 225, 240);
-  padding: 2px 3px;
+  padding: 6px 7px;
   border-radius: 3px;
   color: black;
 }
@@ -154,9 +155,6 @@ h1{
 /* Aquí empiezan los estilos del formulario del proceso */
 
 
-#input-proceso {
-margin: 15px;
-}
 
 .form-select {
 border-radius: 6px;
