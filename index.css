@@ -1,48 +1,48 @@
 body {
-    font-family: 'Nunito', sans-serif;
-    font-family: 'Share Tech', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     width: 100%;
     background-image: url(images/ciudad.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
+    position: relative;
 }
 
 /* Aqui empiezan los estilos para la primera sección de la página, que es la que describe al personal y a la empresa */
 
 h1{
+  padding-top: 40px;
   font-weight: 900;
-  margin-top: 30px;
+  /*margin-top: 30px;*/
+  margin-top: 20vh;
 }
 
 .organizacion p {
   font-weight: 600;
+  margin: 10px 30px;
+  flex-basis: 50%; /* Establecer el ancho del párrafo en un 50% del contenedor */
+  max-width: 50%;
+  align-self: center;
 }
 
 .organizacion {
-  /*background-color: black;*/
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   text-align: center;
   margin: 0%;
-  padding: 50px; 
-  color: black;
-  /*color: white;*/
-  /*text-shadow: grey 1px 0 10px;*/
+  padding: 50px 0; 
+
+
+  color: white;
+  background-color: #303030;
 }
 
-/*.organizacion {
-    margin-top: 30px;
-    font-family: 'Share Tech', sans-serif;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center; 
-  }*/
-  .organizacion p {
-    margin: 10px 30px;
-  }
 
+#contenedor-nosotros{
+  margin-top: 100px;
+}
 
 
 .personal {
@@ -195,3 +195,60 @@ background-color: black;
     /* Otros estilos del select para pantallas pequeñas aquí */
   }
 }
+
+
+
+
+/* Estilos para la barra de navegación */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: slategray; /* Cambia el color de fondo de la barra de navegación según tus necesidades */
+  padding: 16px; /* Ajusta el espaciado interior de la barra de navegación según tus necesidades */
+}
+
+/* Estilos para la lista de navegación */
+.nav-lista {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-lista li {
+  display: inline-block;;
+  /*margin-right: 16px; /* Ajusta el espaciado entre los elementos de la lista según tus necesidades */
+}
+
+.nav-lista li a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: white; /* Cambia el color del texto de los enlaces de navegación según tus necesidades */
+}
+
+.nav-lista li a:hover{
+  color: teal;
+}
+
+/* Aquí empiezan los estilos dados con los media query */
+
+@media screen and (max-width: 580px) {
+  .organizacion {
+    height: 120vh;
+  }
+  .organizacion p {
+    width: auto;
+    text-align: justify;
+    
+    flex-basis: 80%; /* Establecer el ancho del párrafo en un 50% del contenedor */
+    max-width: 80%;
+    align-self: center;
+  }
+  
+}
+
+@media screen and (max-width: 1500px) {
+  .organizacion p {
+    text-align: justify;
+  }}
