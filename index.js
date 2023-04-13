@@ -32,6 +32,13 @@ enviarBtn.addEventListener("click", function(event) {
 
 $(document).ready(function () {
   // Esto se ejecuta luego de cargar el documento. Es como un defer
+  $("#printSummary").click(function () {
+    var printContents = $("#summaryContent").html(); //Tomo el contenido del Summary
+    w = window.open(); //Abro una nueva ventana
+    w.document.write(printContents); //Le inserto los datos del Summary
+    w.print(); //Imprimo
+    return true;
+  });
 })
 
 

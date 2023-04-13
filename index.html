@@ -34,7 +34,7 @@
                 Otras opciones
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#formulario-proceso">Productos y servicios</a></li>
+                <li><a class="dropdown-item" href="#carouselExampleControls">Productos y servicios</a></li>
                 <li><a class="dropdown-item" href="#">Obtener</a></li>
               </ul>
             </li>
@@ -50,7 +50,12 @@
     <div class="organizacion" id="organizacion">
         <h1>Soluciones informáticas</h1>
         <p>Somos una empresa especializada en ofrecer soluciones y servicios informáticos para empresas de todos los tamaños. Nos enorgullece poder brindar soluciones innovadoras y personalizadas para cada uno de nuestros clientes, con un enfoque centrado en sus necesidades específicas y un compromiso constante con la calidad y la excelencia, ¡no dude en contactarnos!</p>
+
+        <!-- Aqui termina el carrusel y comienza la presentación del equipo -->
     </div>
+
+
+
     <div class="personal container-fluid" id="contenedor-nosotros">
         <h3>Nuestro equipo</h3>      
         <div class="row">
@@ -89,10 +94,17 @@
               <button type="submit" class="boton-enviar" id="enviar-btn">¡Enviar!</button>
             </div>
         </form>
-        <form id="form2">
-          <p> <span id="cambiaColor">Su información ha sido recibida correctamente </span>. Aquí un pequeño resúmen de los datos ingresados:</p>
-          <div id="summary"></div>
-        </form>
+        <div id="form2">
+          <div id="summaryContent">
+            <p>
+              <span id="cambiaColor"
+                >Su información ha sido recibida correctamente </span
+              >. Aquí un pequeño resúmen de los datos ingresados:
+            </p>
+            <div id="summary"></div>
+          </div>
+          <button id="printSummary">Imprimir Resumen</button>
+        </div>
     </div>
     <!-- Aquí empiezo el formulario de proceso. Puede llegar a ser un formulario de reclamo también -->
         
@@ -102,25 +114,25 @@
             <h3 class="titulo-formulario">Explora nuestros servicios</h3>
             <div class="form-group">
               <label class="label-text  mb-2 ">Servicios/Productos</label>
+              <select class="form-select seleccionar seleccionar1 form-select-lg mb-3" aria-label=".form-select-lg"required>
+                <option>Seleccionar</option>
+                <option value="Pagina Web">Pagina Web</option>
+                <option value="Instalación de programas">Instalación de programas</option>
+                <option value="Limpieza de memoria">Limpieza de memoria</option>
+                <option value="Desarrollo de software (web,escritorio,etc.)">Desarrollo de software (web,escritorio,etc.)</option>
+                <option value="Gestion de sistemas">Gestion de sistemas</option>
+              </select>
             </div>
-            <select class="form-select seleccionar seleccionar1 form-select-lg mb-3" aria-label=".form-select-lg"required>
-              <option>Seleccionar</option>
-              <option value="Pagina Web">Pagina Web</option>
-              <option value="Instalación de programas">Instalación de programas</option>
-              <option value="Limpieza de memoria">Limpieza de memoria</option>
-              <option value="Desarrollo de software (web,escritorio,etc.)">Desarrollo de software (web,escritorio,etc.)</option>
-              <option value="Gestion de sistemas">Gestion de sistemas</option>
-            </select>
             <div class="form-group">
                 <label class="label-text mb-2 mt-2" required>Metodo de pago</label>
+                <select class="form-select seleccionar seleccionar2 form-select-lg mb-3"  aria-label=".form-select-lg" required>
+                  <option selected>Seleccionar</option>
+                  <option value="1">Tarjeta de debito</option>
+                  <option value="2">Tarjeta de credito</option>
+                  <option value="3">Transferencia bancaria</option>
+                  <option value="4">PayPal</option>
+                </select>
             </div>
-            <select class="form-select seleccionar seleccionar2 form-select-lg mb-3"  aria-label=".form-select-lg" required>
-              <option selected>Seleccionar</option>
-              <option value="1">Tarjeta de debito</option>
-              <option value="2">Tarjeta de credito</option>
-              <option value="3">Transferencia bancaria</option>
-              <option value="4">PayPal</option>
-            </select>
             <div class="form-group">
               <button type="button" class="boton-enviar" id="enviar-2">¡Enviar!</button>
             </div>
@@ -128,6 +140,55 @@
           <p id="errores"></p>
 
         </div>
+
+
+
+         <!-- Aqui empieza el carrusel -->
+
+
+    <div id="carouselExampleControls"  class="carousel slide" data-ride="carousel" >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="carousel-caption d-none d-md-block">
+            <div class="cambiar-fondo">
+              <h5>Páginas web</h5>
+              <p >Creación de páginas web y software para que potencies tu negocio o producto</p>
+            </div>
+          </div>
+          <img class="d-block w-100" style="height: 720px;" src="images/carrusel/web.jpg" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-caption d-none d-md-block">
+            <div class="cambiar-fondo">
+              <h5>Instalación de programmas</h5>
+              <p >Instalamos todas las aplicaciones y programas que necesites</p>
+            </div>
+          </div>
+          <img class="d-block w-100" style="height: 720px;" src="images/carrusel/programa.jpg" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-caption d-none d-md-block">
+            <div class="cambiar-fondo">
+              <h5>Limpiamos tu computadora</h5>
+              <p>Eliminamos archivos que ya no necesites, te ocupen espacio innecesario o enlentezcan tu dispositivo</p>
+            </div>
+          </div>
+          <img class="d-block w-100" style="height: 720px;" src="images/carrusel/limpieza.jpg" alt="Third slide">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+      </a>
+    </div>
+
+
+
+
         <footer>
 
         </footer>
