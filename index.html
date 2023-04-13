@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soluciones informáticas</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,24 +14,47 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
 <body>
-  <!-- Aquí empieza la descripción de la empresa y sus miembros -->
     <!-- Navbar -->
-    <nav class="navbar navbar-nav ">
-      <ul class="nav-lista">
-
-        <li><a href="#">Acerca de</a></li>
-        <li><a href="#contenedor-nosotros">Nosotros</a></li>
-        <li><a href="#formulario-contacto">Contacto</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" style="color: black; font-weight: bolder;">Soluciones informáticas</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#contenedor-nosotros">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#formulario-contacto">Contacto</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Otras opciones
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#formulario-proceso">Productos y servicios</a></li>
+                <li><a class="dropdown-item" href="#">Obtener</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
-    <div class="organizacion">
+
+    <!-- Aqui termina el codigo de la navbar -->
+
+
+      <!-- Aquí empieza la descripción de la empresa y sus miembros -->
+    <div class="organizacion" id="organizacion">
         <h1>Soluciones informáticas</h1>
         <p>Somos una empresa especializada en ofrecer soluciones y servicios informáticos para empresas de todos los tamaños. Nos enorgullece poder brindar soluciones innovadoras y personalizadas para cada uno de nuestros clientes, con un enfoque centrado en sus necesidades específicas y un compromiso constante con la calidad y la excelencia, ¡no dude en contactarnos!</p>
     </div>
     <div class="personal container-fluid" id="contenedor-nosotros">
         <h3>Nuestro equipo</h3>      
         <div class="row">
-            <div class="card col-sm-12 mx-auto cartas col-md-5 justify-content-center col-lg-5 mr-5" style="width: 18rem;">
+            <div class="card col-sm-12 mx-auto cartas col-md-5 justify-content-center col-lg-5 me-5" style="width: 18rem;">
                 <img class="card-img-top imagenes" src="images/avatar-2.png" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Imanol</h5>
@@ -55,15 +78,15 @@
         <h3 class="titulo-formulario" id="titulo-reclamo">¡Contactate con nosotros y nos comunicaremos a la brevedad!</h3>
         <form id="form1">
             <div class="form-group">
-              <label for="exampleFormControlInput1" class="label-text mt-4">Ingrese su email</label>
+              <label for="exampleFormControlInput1" class="label-text mail  mt-4">Ingrese su email</label>
               <input type="email" class="form-control email-input" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com" required>
             </div>
             <div class="form-group">
-              <label for="exampleFormControlTextarea1" class="label-text">Agregue un comentario</label>
+              <label for="exampleFormControlTextarea1" class="label-text  comentario">Agregue un comentario</label>
               <textarea class="form-control texto-input" id="exampleFormControlTextarea1"  rows="3" cols="50" placeholder="¿Qué quieres contarnos?" required></textarea>
             </div>
             <div class="form-group">
-              <button type="button" class="boton-enviar" id="enviar-btn">¡Enviar!</button>
+              <button type="submit" class="boton-enviar" id="enviar-btn">¡Enviar!</button>
             </div>
         </form>
         <form id="form2">
@@ -78,7 +101,7 @@
             <div class="formulario-proceso" id="formulario-proceso">
             <h3 class="titulo-formulario">Explora nuestros servicios</h3>
             <div class="form-group">
-              <label class="label-text  mb-0 ">Servicios/Productos</label>
+              <label class="label-text  mb-2 ">Servicios/Productos</label>
             </div>
             <select class="form-select seleccionar seleccionar1 form-select-lg mb-3" aria-label=".form-select-lg"required>
               <option>Seleccionar</option>
@@ -89,7 +112,7 @@
               <option value="Gestion de sistemas">Gestion de sistemas</option>
             </select>
             <div class="form-group">
-                <label class="label-text mb-0" required>Metodo de pago</label>
+                <label class="label-text mb-2 mt-5" required>Metodo de pago</label>
             </div>
             <select class="form-select seleccionar seleccionar2 form-select-lg mb-3"  aria-label=".form-select-lg" required>
               <option selected>Seleccionar</option>
@@ -109,7 +132,7 @@
 
         </footer>
 
-
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
