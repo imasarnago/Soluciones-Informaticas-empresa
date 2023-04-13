@@ -16,13 +16,12 @@
 <body>
   <!-- Aquí empieza la descripción de la empresa y sus miembros -->
     <!-- Navbar -->
-    <nav class="navbar">
-      <!-- Contenido de la barra de navegación -->
+    <nav class="navbar navbar-nav ">
       <ul class="nav-lista">
-        <!-- <li><a href="#">Inicio</a></li> -->
+
         <li><a href="#">Acerca de</a></li>
         <li><a href="#contenedor-nosotros">Nosotros</a></li>
-        <li><a href="#titulo-reclamo">Contacto</a></li>
+        <li><a href="#formulario-contacto">Contacto</a></li>
       </ul>
     </nav>
     <div class="organizacion">
@@ -32,51 +31,27 @@
     <div class="personal container-fluid" id="contenedor-nosotros">
         <h3>Nuestro equipo</h3>      
         <div class="row">
-            <div class="card col-sm-12 mx-auto cartas col-md-12 justify-content-center col-lg-auto" style="width: 18rem;">
+            <div class="card col-sm-12 mx-auto cartas col-md-5 justify-content-center col-lg-5 mr-5" style="width: 18rem;">
                 <img class="card-img-top imagenes" src="images/avatar-2.png" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Imanol</h5>
-                  <p class="card-text">Estudio Computación, desarrollo web por mi cuenta y me apasiona el mundo del web development</p>
+                  <p class="card-text">Estudio Computación, desarrollo web por mi cuenta y también web development</p>
                   <a href="https://github.com/imasarnago" target="_blank" class="btn btn-primary">Mi perfil de GitHub</a>
                 </div>
               </div>
-              <div class="card col-sm-12 mx-auto cartas col-md-12 justify-content-center col-lg-auto" style="width: 18rem;">
+              <div class="card col-sm-12 mx-auto cartas col-md-5 justify-content-center col-lg-5" style="width: 18rem;">
                 <img class="card-img-top imagenes" src="images/avatar.png" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Antonella</h5>
                   <p class="card-text">Estudio licenciatura en ciencias de la computación y estoy expandiendo mis conocimientos de programacion</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <a href="https://github.com/antonuki" class="btn btn-primary">Mi perfil de GitHub</a>
                 </div>
               </div>
-              <div class="card col-sm-12 mx-auto cartas col-md-12 justify-content-center col-lg-auto" style="width: 18rem;">
-                <img class="card-img-top imagenes" src="images/avatar.png" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Celeste</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-              <div class="card col-sm-12 mx-auto cartas col-md-6 col-md-12 justify-content-center col-lg-auto" style="width: 18rem;">
-                <img class="card-img-top imagenes" src="images/avatar-2.png" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Facundo</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-              <div class="card col-sm-12 mx-auto cartas col-md-6 col-md-12 justify-content-center col-lg-auto" style="width: 18rem;">
-                <img class="card-img-top imagenes" src="images/avatar-2.png" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Ezequiel</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-                </div>
         </div>
     </div>
 
     <!-- Aqui empieza el formulario de contacto, con un input para escribir un comentario y otro donde se debe ingresar el mail -->
-    <div class="formulario-contacto">
+    <div class="formulario-contacto" id="formulario-contacto">
         <h3 class="titulo-formulario" id="titulo-reclamo">¡Contactate con nosotros y nos comunicaremos a la brevedad!</h3>
         <form id="form1">
             <div class="form-group">
@@ -100,10 +75,10 @@
         
         
           <form id="form4" onsubmit="enviarForm2(event)">
-            <div class="formulario-contacto">
+            <div class="formulario-proceso" id="formulario-proceso">
             <h3 class="titulo-formulario">Explora nuestros servicios</h3>
             <div class="form-group">
-              <label class="label-text mt-4">Servicios/Productos</label>
+              <label class="label-text  mb-0 ">Servicios/Productos</label>
             </div>
             <select class="form-select seleccionar seleccionar1 form-select-lg mb-3" aria-label=".form-select-lg"required>
               <option>Seleccionar</option>
@@ -114,7 +89,7 @@
               <option value="Gestion de sistemas">Gestion de sistemas</option>
             </select>
             <div class="form-group">
-                <label class="label-text mt-4" required>Metodo de pago</label>
+                <label class="label-text mb-0" required>Metodo de pago</label>
             </div>
             <select class="form-select seleccionar seleccionar2 form-select-lg mb-3"  aria-label=".form-select-lg" required>
               <option selected>Seleccionar</option>
@@ -130,6 +105,9 @@
           <p id="errores"></p>
 
         </div>
+        <footer>
+
+        </footer>
 
 
 
