@@ -63,14 +63,15 @@ h1{
 
 #contenedor-nosotros{
   margin-top: 0;
-  padding-top: 100px;
+  padding-top: px;
   color: white;
   background-color: #303030;
-  height: 100vh;
+  height: 130vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0px 0px 0px 0px !important;
 }
 
 
@@ -83,7 +84,7 @@ h1{
 .personal h3 {
   text-align: center;
   color: white;
-  margin: 20px 10px 20px 10px;
+  margin: 0px 10px 5px 10px;
 }
 
 
