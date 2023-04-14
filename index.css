@@ -254,9 +254,9 @@ background-color: black;
   padding-left: 2%;
 }
 
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 575px) {
   .seleccionar {
-    width: 95% !important; 
+    width: 95vw !important; 
   }
 }
 
