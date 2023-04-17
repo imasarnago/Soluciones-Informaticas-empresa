@@ -131,7 +131,7 @@
     <!-- Aqui empieza el formulario de contacto, con un input para escribir un comentario y otro donde se debe ingresar el mail -->
     <div class="formulario-contacto" id="formulario-contacto">
         <h3 class="titulo-formulario" id="titulo-reclamo">¡Contactate con nosotros y nos comunicaremos a la brevedad!</h3>
-        <form id="form1">
+        <form id="form1" onsubmit="subirForm(event)">
             <div class="form-group">
               <label for="exampleFormControlInput1" class="label-text mail  mt-4">Ingrese su email</label>
               <input type="email" class="form-control email-input" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com" required>
