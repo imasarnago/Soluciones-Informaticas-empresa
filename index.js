@@ -7,27 +7,34 @@ const tituloReclamo = document.getElementById("titulo-reclamo")
 const cambiaColor = document.getElementById("cambiaColor")
 
 
-// El codigo a continuación lo que hace es hacer un formulario paso a paso. Sus valores se pueden modificar siguiendo la misma lógica con otros campos input
+function subirForm(event) {
+  event.preventDefault()
+  let email = document.querySelector("#exampleFormControlInput1").value;
+  let texto = document.querySelector("#exampleFormControlTextarea1").value;
 
-enviarBtn.addEventListener("click", function(event) {
-    
-  });
+  if (email === "" || texto === ""){
+    alert("Los campos son requeridos")
+  }else {
+    summary.innerHTML = `Email: ${email}<br> Comentario: ${texto}`;
+  
+    // ocultar el primer paso y mostrar el segundo paso
+    form1.style.display = "none";
+    form2.style.display = "block";
+    tituloReclamo.style.display = "none"
+    cambiaColor.style.color = "#ffc300"
+  }
 
+}
 
 
 $(document).ready(function () {
 
-
-
-
-
-
   // La siguiente función me convierte a PDF el resúmen de los datos ingresados por el usuario
   
   $("#printSummary").click(function () {
-    var printContents = $("#summaryContent").html(); //Tomo el contenido del Summary
+    var printContents = $("#summaryContent").html(); 
     w = window.open(); //Abro una nueva ventana
-    w.document.write(printContents); //Le inserto los datos del Summary
+    w.document.write(printContents); 
     w.print(); //Imprimo
     return true;
   });
@@ -65,21 +72,3 @@ $("#enviar-2").click(function(){
 })
 
 
-function subirForm(event) {
-    event.preventDefault()
-    let email = document.querySelector("#exampleFormControlInput1").value;
-    let texto = document.querySelector("#exampleFormControlTextarea1").value;
-
-    if (email === "" || texto === ""){
-      alert("Los campos son requeridos")
-    }else {
-      summary.innerHTML = `Email: ${email}<br> Comentario: ${texto}`;
-    
-      // ocultar el primer paso y mostrar el segundo paso
-      form1.style.display = "none";
-      form2.style.display = "block";
-      tituloReclamo.style.display = "none"
-      cambiaColor.style.color = "#ffc300"
-    }
-
-}
