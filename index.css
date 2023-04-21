@@ -64,8 +64,7 @@ h1{
   margin-top: 0px;
   color: white;
   background-color: #303030;
-  /*height: 130vh;*/
-  height: min-content;
+  height: 100vh;
   padding: 10px 0px;
   display: flex;
   flex-direction: column;
@@ -301,4 +300,10 @@ background-color: black;
       background-size: auto;
     }
    
+  }
+
+  @media screen and (max-width: 600px){
+    #contenedor-nosotros {
+      height: min-content;
+    }
   }
