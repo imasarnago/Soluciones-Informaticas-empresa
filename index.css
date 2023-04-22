@@ -291,6 +291,9 @@ background-color: black;
     .carousel img #segundaImg {
       height: 500px !important;
     }
+    .carousel .cambiar-fondo {
+      margin-bottom: 100px;
+    }
   }
 
 
