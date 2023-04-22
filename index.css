@@ -218,7 +218,8 @@ h1{
   flex-direction: column;
   margin: 0px 10px;
   padding-top: 30px;
-  height: 100vh;
+  /*height: 100vh;*/
+  height: min-content;
 }
 
 
