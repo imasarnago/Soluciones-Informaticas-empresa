@@ -123,7 +123,7 @@ h1{
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 30px;
-  height: 100vh;
+  height: 105vh;
 }
 
 .titulo-formulario {
@@ -218,8 +218,6 @@ h1{
   flex-direction: column;
   margin: 0px 10px;
   padding-top: 30px;
-  /*height: 100vh;*/
-  height: min-content;
 }
 
 
